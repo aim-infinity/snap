@@ -134,8 +134,26 @@ code{padding:.05em .35em;border-radius:6px;background:#ffffff1f;font:500 .9em ui
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button,.faq summary::after,.nav nav a{transition:none}}
 
+/* PDF export showcase: copy beside a fanned stack of three real exported pages. */
+.pdf-showcase{display:grid;grid-template-columns:1fr 1.05fr;gap:56px;align-items:center}
+.pdf-lede{margin-top:16px;color:var(--muted);font-size:18px}
+.pdf-points{display:grid;gap:18px;margin:32px 0 0;padding:0;list-style:none}
+.pdf-points li{display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start}
+.pdf-points li>svg{box-sizing:content-box;width:20px;height:20px;padding:10px;border-radius:12px;background:var(--purple-soft);color:var(--purple)}
+@media (prefers-color-scheme:dark){.pdf-points li>svg{color:#b999ff}}
+.pdf-points strong{display:block;margin-bottom:2px;font-size:17px;font-weight:600;color:var(--text)}
+.pdf-points span{color:var(--muted);font-size:15px}
+.pdf-stack{position:relative;aspect-ratio:1/1;min-height:0}
+.pdf-page{position:absolute;top:50%;left:50%;width:58%;height:auto;border-radius:10px;box-shadow:0 0 0 .5px #17173a1f,0 24px 60px #17173a29;transform-origin:50% 60%;transition:transform .5s cubic-bezier(.22,1,.36,1)}
+.pdf-page--1{z-index:3;transform:translate(-50%,-50%) rotate(-1deg)}
+.pdf-page--2{z-index:2;transform:translate(-30%,-52%) rotate(6deg)}
+.pdf-page--3{z-index:1;transform:translate(-70%,-48%) rotate(-8deg)}
+.pdf-stack:hover .pdf-page--2{transform:translate(-20%,-53%) rotate(9deg)}
+.pdf-stack:hover .pdf-page--3{transform:translate(-80%,-47%) rotate(-11deg)}
+@media (prefers-reduced-motion:reduce){.pdf-page{transition:none}}
 @media (max-width:900px){
   .steps,.features{grid-template-columns:1fr 1fr}
+  .pdf-showcase{grid-template-columns:1fr;gap:32px}.pdf-stack{max-width:560px;width:100%;margin:0 auto}
   .privacy{grid-template-columns:1fr;padding:40px 32px}
 }
 @media (max-width:640px){
