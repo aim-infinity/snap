@@ -169,3 +169,8 @@ code{padding:.05em .35em;border-radius:6px;background:#ffffff1f;font:500 .9em ui
   .actions{flex-direction:column}
   .nav .button{width:auto}
 }
+
+/* PDF export walkthrough */
+.pdf-demo{margin:0;min-width:0}
+.pdf-demo video{display:block;width:100%;height:auto;border-radius:16px;background:#17173a;box-shadow:0 0 0 .5px #17173a1f,0 24px 60px #17173a20}
+.pdf-demo figcaption{margin-top:16px;color:var(--muted);font-size:14px;line-height:1.5;text-align:center}
