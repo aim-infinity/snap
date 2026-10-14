@@ -170,11 +170,6 @@ code{padding:.05em .35em;border-radius:6px;background:#ffffff1f;font:500 .9em ui
   .nav .button{width:auto}
 }
 
-/* PDF export walkthrough */
-.pdf-demo{margin:0;min-width:0}
-.pdf-demo video{display:block;width:100%;height:auto;border-radius:16px;background:#17173a;box-shadow:0 0 0 .5px #17173a1f,0 24px 60px #17173a20}
-.pdf-demo figcaption{margin-top:16px;color:var(--muted);font-size:14px;line-height:1.5;text-align:center}
-
 /* Blog and article pages share the landing page's color and type tokens. */
 .blog-hero{padding:64px 0 40px}
 .blog-hero h1{max-width:850px;font-size:clamp(36px,5.5vw,64px);line-height:1.08;letter-spacing:-.035em}
@@ -216,3 +211,8 @@ code{padding:.05em .35em;border-radius:6px;background:#ffffff1f;font:500 .9em ui
 @media(max-width:640px){.nav nav{display:flex}.nav nav a{display:none}.nav nav a.blog-nav-link{display:block}.nav-inner{gap:6px}.nav nav{margin-left:auto}.nav .button{padding-inline:12px}.blog-hero{padding-top:40px}.blog-intro{font-size:18px}.article-body{font-size:17px}.article-aside ol{columns:1}}
 
 .hero-note{max-width:640px;margin:24px auto 0;color:var(--muted);font-size:15px;line-height:1.6}
+
+/* PDF export walkthrough */
+.pdf-demo{margin:0;min-width:0}
+.pdf-demo video{display:block;width:100%;height:auto;border-radius:16px;background:#17173a;box-shadow:0 0 0 .5px #17173a1f,0 24px 60px #17173a20}
+.pdf-demo figcaption{margin-top:16px;color:var(--muted);font-size:14px;line-height:1.5;text-align:center}

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://aim-infinity.github.io/snap/</loc></url>
-<url><loc>https://aim-infinity.github.io/snap/blogs/</loc></url>
-<url><loc>https://aim-infinity.github.io/snap/blogs/document-product-flows/</loc></url>
-<url><loc>https://aim-infinity.github.io/snap/blogs/screenshot-bug-reports/</loc></url>
-<url><loc>https://aim-infinity.github.io/snap/blogs/step-by-step-pdf-guides/</loc></url>
+<url><loc>https://snapflow.in/</loc></url>
+<url><loc>https://snapflow.in/blogs/</loc></url>
+<url><loc>https://snapflow.in/blogs/document-product-flows/</loc></url>
+<url><loc>https://snapflow.in/blogs/screenshot-bug-reports/</loc></url>
+<url><loc>https://snapflow.in/blogs/step-by-step-pdf-guides/</loc></url>
+<url><loc>https://snapflow.in/privacy/</loc></url>
+<url><loc>https://snapflow.in/support/</loc></url>
 </urlset>
