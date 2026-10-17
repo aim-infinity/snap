@@ -1,123 +1,182 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Snap: screenshot flows for Chrome</title>
-<meta name="description" content="Snap captures the moments you choose in Chrome, puts them in order, and lets you annotate and export the whole journey. No video, no account, nothing uploaded.">
-<link rel="canonical" href="https://snapflow.in/">
-<meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#f9f9ff" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#141416" media="(prefers-color-scheme: dark)">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Snap: screenshot flows for Chrome">
-<meta property="og:description" content="Capture the moments that matter, in order. Annotate, redact and export. Everything stays on your device.">
-<meta property="og:image" content="https://snapflow.in/assets/og.png">
-<meta property="og:url" content="https://snapflow.in/">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=44c19b6703">
-<link rel="apple-touch-icon" href="assets/icon-128.png?v=1ec44d9e03">
-<link rel="preload" href="assets/fonts/Inter-Medium.ttf" as="font" type="font/ttf" crossorigin>
-<link rel="stylesheet" href="styles.css?v=d1a00daaaa">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snap Flow: capture product flows, not random screenshots</title><meta name="description" content="Free Chrome extension for product teams. Snap the screens you choose, keep them in order, annotate and redact, then paste into Figma or share a PDF.">
+<link rel="canonical" href="https://snapflow.in/"><meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f9f9ff" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#141416" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Snap Flow"><meta property="og:locale" content="en_US">
+<meta property="og:title" content="Snap Flow: capture product flows, not random screenshots"><meta property="og:description" content="Free Chrome extension for product teams. Snap the screens you choose, keep them in order, annotate and redact, then paste into Figma or share a PDF."><meta property="og:url" content="https://snapflow.in/">
+<meta property="og:image" content="https://snapflow.in/assets/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Snap: capture product flows, not random screenshots">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Snap Flow: capture product flows, not random screenshots"><meta name="twitter:description" content="Free Chrome extension for product teams. Snap the screens you choose, keep them in order, annotate and redact, then paste into Figma or share a PDF."><meta name="twitter:image" content="https://snapflow.in/assets/og.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=44c19b6703"><link rel="apple-touch-icon" href="assets/icon-128.png?v=1ec44d9e03">
+<link rel="preload" href="assets/fonts/Inter-Medium.ttf" as="font" type="font/ttf" crossorigin><link rel="stylesheet" href="styles.css?v=3c939e231e">
+<link rel="stylesheet" href="assets/islands.css?v=c2475c7bb1">
+<script src="assets/islands.js?v=2f8577261d" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://snapflow.in/#site","name":"Snap Flow","url":"https://snapflow.in/","publisher":{"@id":"https://snapflow.in/#org"}},{"@type":"Organization","@id":"https://snapflow.in/#org","name":"Infinity Labs","url":"https://ammitsharma.in/","email":"iaimforinfinity@gmail.com"},{"@type":"SoftwareApplication","@id":"https://snapflow.in/#app","name":"Snap Flow","alternateName":"Snap","url":"https://snapflow.in/","downloadUrl":"https://chromewebstore.google.com/detail/Snap/alnaibbnciplmmjfdfcjokgebekljban","installUrl":"https://chromewebstore.google.com/detail/Snap/alnaibbnciplmmjfdfcjokgebekljban","applicationCategory":"BrowserApplication","applicationSubCategory":"Screenshot tool","operatingSystem":"Chrome","browserRequirements":"Requires Google Chrome","softwareVersion":"0.10.7","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"image":"https://snapflow.in/assets/og.png","screenshot":"https://snapflow.in/assets/editor-light.png","publisher":{"@id":"https://snapflow.in/#org"},"description":"Free Chrome extension that captures the screens you choose as an ordered flow, with annotation, redaction, full page capture and PDF, PNG and Figma export.","featureList":["Visible area, selected area and full page capture","Rectangles, arrows, text and redaction","Export to PDF, PNG and ZIP","Copy a whole flow into Figma","No account; screenshots stay on your device"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Snap free?","acceptedAnswer":{"@type":"Answer","text":"Yes. Install it from the Chrome Web Store and start snapping. There is no account and no sign-up."}},{"@type":"Question","name":"How is Snap different from a screen recorder?","acceptedAnswer":{"@type":"Answer","text":"Snap never records video and never captures on its own. You decide which screens become steps, and each one is a sharp screenshot you can annotate, redact and export."}},{"@type":"Question","name":"How does Copy to Figma work?","acceptedAnswer":{"@type":"Answer","text":"Copy to Figma puts the whole flow on your clipboard. Paste into any Figma file and each step appears as a numbered, labeled frame, laid out left to right. There is no plugin and no Figma account connection."}},{"@type":"Question","name":"Can I share flows with my team?","acceptedAnswer":{"@type":"Answer","text":"Snap has no cloud workspace, by design. Share what you export: a PDF, a ZIP of numbered PNGs with your notes, a single PNG, or a paste into a shared Figma file."}},{"@type":"Question","name":"Where are my flows stored?","acceptedAnswer":{"@type":"Answer","text":"In your Chrome profile on this device, encrypted. Export anything important before removing the extension or clearing browser data."}},{"@type":"Question","name":"Can I hide sensitive information?","acceptedAnswer":{"@type":"Answer","text":"Yes. Draw a redaction over any area and it is pixelated in every PNG, ZIP, PDF and Figma export. Your original capture is kept unchanged in the editor."}},{"@type":"Question","name":"Does it work on every website?","acceptedAnswer":{"@type":"Answer","text":"On normal web pages, yes. Browser-internal pages and incognito tabs are excluded. When you move to a new site, Chrome may ask you to open Snap again to grant access."}},{"@type":"Question","name":"How long can a flow be?","acceptedAnswer":{"@type":"Answer","text":"Up to 120 steps or about 200 MB per flow. Full-page captures stitch up to 30 screens."}},{"@type":"Question","name":"Does Snap work on my phone?","acceptedAnswer":{"@type":"Answer","text":"No. Snap is a Chrome extension for desktop. Open this page on your computer to install it."}}]}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
-<header class="nav">
-  <div class="wrap nav-inner">
-    <a class="brand" href="#top" aria-label="Snap home"><img src="assets/logo.png?v=5d984b726b" alt="" width="26" height="23"><img class="wordmark" src="assets/wordmark.svg?v=fe84d55ec9" alt="Snap" width="46" height="19"></a>
-    <nav aria-label="Primary"><a href="#how">How it works</a><a href="#features">Features</a><a href="#pdf">PDF export</a><a href="#privacy">Privacy</a><a href="#faq">FAQ</a><a class="blog-nav-link" href="blogs/">Blogs</a></nav>
-    <a class="button button--primary button--small" href="https://chromewebstore.google.com/detail/Snap/alnaibbnciplmmjfdfcjokgebekljban">Add to Chrome</a>
-  </div>
-</header>
+<header class="nav"><div class="wrap nav-inner"><a class="brand" href="#top" aria-label="Snap home"><img src="assets/logo.png?v=5d984b726b" alt="" width="26" height="23"><img class="wordmark" src="assets/wordmark.svg?v=fe84d55ec9" alt="Snap" width="46" height="19"></a><nav aria-label="Primary"><a href="#how">How it works</a><a href="annotate-screenshots/">Annotate</a><a href="full-page-screenshot/">Full page</a><a href="#faq">FAQ</a><a class="blog-nav-link" href="blogs/">Blog</a></nav><a class="button button--primary button--small" href="https://chromewebstore.google.com/detail/Snap/alnaibbnciplmmjfdfcjokgebekljban">Add to Chrome</a></div></header>
 
 <main id="main">
   <section class="hero" id="top">
     <div class="wrap hero-copy">
-      <a class="ph-badge" href="https://www.producthunt.com/products/snap-10?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-snap-12" target="_blank" rel="noopener noreferrer"><picture><source media="(prefers-color-scheme: dark)" srcset="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1270879&amp;theme=dark&amp;t=1791261049570"><img alt="Snap - Capture product flows, not random screenshots. | Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1270879&amp;theme=light&amp;t=1791261049570"></picture></a>
-      <p class="eyebrow"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z"/></svg> Chrome extension for capturing website user flows</p>
-      <h1>Capture user flows.<br>Keep every screenshot in order.</h1>
-      <p class="lede">Document onboarding, checkout, or any website journey with screenshots you choose. Organize steps, add annotations, and export to PDF, PNG, or Figma.</p>
+      <h1 data-tech-text>Capture product flows, <br>not random screenshots.</h1>
+      <p class="lede">Snap the screens that matter as you click through any website. They land in order, ready to annotate, redact, paste into Figma or share as a PDF.</p>
       <div class="actions">
-        <a class="button button--primary" href="https://chromewebstore.google.com/detail/Snap/alnaibbnciplmmjfdfcjokgebekljban"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z"/></svg> Add to Chrome</a>
+        <a class="button button--primary" href="https://chromewebstore.google.com/detail/Snap/alnaibbnciplmmjfdfcjokgebekljban">Add to Chrome, it’s free</a>
         <a class="button button--secondary" href="#how">See how it works</a>
       </div>
-      <p class="hero-note">Your screenshots have a story. Spare them the Downloads folder. No account needed. Screenshots stay on your device.</p>
+      <p class="mobile-note"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg> Snap is a desktop Chrome extension. Open this page on your computer to install it.</p>
+      <ul class="trust" aria-label="Why teams trust Snap"><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Free</li><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> No account</li><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Nothing leaves your browser</li></ul>
     </div>
     <div class="wrap">
       <figure class="stage">
         <picture>
-          <source srcset="assets/editor-dark.png?v=609fd7e14a" media="(prefers-color-scheme: dark)">
-          <img class="stage-shot" src="assets/editor-light.png?v=00bad733b9" alt="The Snap editor showing a five-step checkout flow. The first step is annotated with a rectangle, an arrow and a text label, and a pixelated redaction hides the store logo." width="1440" height="813">
+          <source srcset="assets/editor-dark.png?v=3a26b89b8b" media="(prefers-color-scheme: dark)">
+          <img class="stage-shot" fetchpriority="high" src="assets/editor-light.png?v=4f02183950" alt="The Snap editor showing a five-step flow captured on snapflow.in. The first step, the Snap blog home, is annotated with a box around the headline, an arrow, a text label and a pixelated redaction." width="1440" height="813">
         </picture>
         <img class="stage-toolbar" src="assets/toolbar.png?v=5a38a576f5" alt="The floating Snap toolbar with capture mode, step count, shortcut, Snap and Finish buttons." width="766" height="110" loading="lazy">
       </figure>
     </div>
   </section>
 
+  <section class="section section--tint" id="problem" aria-labelledby="problem-title">
+    <div class="wrap problem">
+      <div class="problem-copy">
+        <p class="kicker">The problem</p>
+        <h2 id="problem-title">Your screenshots have a story. Stop losing it in Downloads.</h2>
+        <p>A screenshot shortcut gives you files named after timestamps, scattered next to invoices and installers. Snap gives you a flow: every capture numbered, titled and kept with its URL, in the order you took it.</p>
+      </div>
+      <div class="problem-compare">
+        <figure class="problem-card problem-card--before">
+          <figcaption><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2"/></svg> Downloads</figcaption>
+          <ul aria-label="Unsorted screenshot files">
+            <li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg> <span>Screenshot 2026-10-14 at 15.42.11.png</span></li>
+            <li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg> <span>Screenshot 2026-10-14 at 15.42.58.png</span></li>
+            <li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg> <span>invoice-final-v2.pdf</span></li>
+            <li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg> <span>Screenshot 2026-10-14 at 15.44.03.png</span></li>
+            <li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg> <span>Screenshot 2026-10-14 at 15.44.03 (1).png</span></li>
+            <li class="problem-more">+ 42 more</li>
+          </ul>
+        </figure>
+        <span class="problem-arrow" aria-hidden="true"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        <figure class="problem-card problem-card--after">
+          <figcaption><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5h10"/><path d="M11 12h10"/><path d="M11 19h10"/><path d="M4 4h1v5"/><path d="M4 9h2"/><path d="M6.5 20H3.4c0-1 2.6-1.925 2.6-3.5a1.5 1.5 0 0 0-2.6-1.02"/></svg> Checkout journey</figcaption>
+          <ol aria-label="An ordered Snap flow">
+            <li><span>01</span> Product page <em>2 notes</em></li>
+            <li><span>02</span> Choose a size</li>
+            <li><span>03</span> Your bag <em>Redacted</em></li>
+            <li><span>04</span> Delivery</li>
+            <li><span>05</span> Order review <em>1 note</em></li>
+          </ol>
+        </figure>
+      </div>
+    </div>
+  </section>
+
   <section class="section" id="how" aria-labelledby="how-title">
-    <div class="wrap">
-      <p class="kicker">How it works</p>
-      <h2 id="how-title">Three steps from page to shareable flow</h2>
-      <ol class="steps">
-        <li class="step">
-          <div class="step-media step-media--popup"><img src="assets/popup.png?v=a919e4ec53" alt="The Snap popup: current site, a flow name field and the Start Snapping button." width="360" height="365" loading="lazy"></div>
-          <span class="step-number">01</span>
-          <h3>Start a flow</h3>
-          <p>Open Snap on any website, name the journey, and press Start Snapping. A small toolbar appears on the page.</p>
-        </li>
-        <li class="step">
-          <div class="step-media step-media--toolbar"><img src="assets/toolbar-menu.png?v=5f8b82d107" alt="The toolbar's capture menu with Visible area, Selected area and Full page options." loading="lazy"></div>
-          <span class="step-number">02</span>
-          <h3>Snap what matters</h3>
-          <p>Capture the visible area, drag to select a region, or stitch the full page. Press <span class="keys"><kbd>⌥</kbd><kbd>⇧</kbd><kbd>S</kbd></span> without leaving the page.</p>
-        </li>
-        <li class="step">
-          <div class="step-media step-media--annotate"><img src="assets/annotate.png?v=85b7717ccc" alt="A captured step being annotated with a red rectangle, arrow and label." width="1072" height="513" loading="lazy"></div>
-          <span class="step-number">03</span>
-          <h3>Review and export</h3>
-          <p>Reorder steps, add notes, annotate or redact, then export PNG, ZIP or PDF, or paste the flow straight into Figma.</p>
-        </li>
-      </ol>
+    <div class="wrap how">
+      <div class="how-copy">
+        <p class="kicker">How it works</p>
+        <h2 id="how-title">From live website to shareable flow in three steps</h2>
+        <ol class="how-steps">
+          <li><span class="step-number">01</span><div><h3>Name the flow</h3><p>Open Snap on any website, name what you are documenting, and press Start Snapping. A small toolbar joins the page.</p></div></li>
+          <li><span class="step-number">02</span><div><h3>Snap only what matters</h3><p>Click through as usual and snap the visible area, a selected region or the <a href="full-page-screenshot/">full page</a>. Or press <span class="keys"><kbd>⌥</kbd><kbd>⇧</kbd><kbd>S</kbd></span> without leaving the page.</p></div></li>
+          <li><span class="step-number">03</span><div><h3>Mark it up and ship it</h3><p>Reorder steps, add notes, <a href="annotate-screenshots/">annotate or redact</a>. Then paste into Figma, download a PDF, or export PNGs.</p></div></li>
+        </ol>
+      </div>
+      <!-- React Bits' CardSwap (site/src/how-swap.jsx) mounts here; the static screenshot is the no-script fallback. -->
+      <div class="how-swap" data-card-swap>
+        <img class="how-fallback" src="assets/capture-page.png?v=661a5fb051" alt="A Snap blog article with the Snap toolbar docked at the bottom: capture mode, step count, shortcut, Snap and Finish." width="1440" height="813" loading="lazy">
+      </div>
     </div>
   </section>
 
-  <section class="section section--tint" id="features" aria-labelledby="features-title">
+  <section class="section section--tint" id="use-cases" aria-labelledby="use-cases-title">
     <div class="wrap">
-      <p class="kicker">Features</p>
-      <h2 id="features-title">Everything a flow needs, nothing it doesn't</h2>
-      <ul class="features">
-        <li class="feature"><span class="feature-icon"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2v14a2 2 0 0 0 2 2h14"/><path d="M18 22V8a2 2 0 0 0-2-2H2"/></svg></span><h3>Three capture modes</h3><p>Visible area, a selected rectangle, or the full page stitched automatically, with fixed headers shown once.</p></li>
-        <li class="feature"><span class="feature-icon"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 21h8"/><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/></svg></span><h3>Annotate and redact</h3><p>Rectangles, arrows and text call out what matters. Redact pixelates sensitive areas in every export. Originals stay untouched.</p></li>
-        <li class="feature"><span class="feature-icon"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3v18"/><rect width="12" height="18" x="6" y="3" rx="2"/><path d="M22 3v18"/></svg></span><h3>Organize the story</h3><p>Drag or use the keyboard to reorder, rename steps, add descriptions, and restore anything you remove.</p></li>
-        <li class="feature"><span class="feature-icon"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.226 20.925A2 2 0 0 0 6 22h12a2 2 0 0 0 2-2V8a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 14 2H6a2 2 0 0 0-2 2v3.127"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="m5 11-3 3"/><path d="m5 17-3-3h10"/></svg></span><h3>Export anywhere</h3><p>Single PNGs at any width, a numbered ZIP with flow notes, print-ready PDF, or copy the whole flow into Figma.</p></li>
-        <li class="feature"><span class="feature-icon"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 8h.01"/><path d="M12 12h.01"/><path d="M14 8h.01"/><path d="M16 12h.01"/><path d="M18 8h.01"/><path d="M6 8h.01"/><path d="M7 16h10"/><path d="M8 12h.01"/><rect width="20" height="16" x="2" y="4" rx="2"/></svg></span><h3>Keyboard first</h3><p>A fixed shortcut to snap, arrow keys through steps, and shortcuts for every annotation tool.</p></li>
-        <li class="feature"><span class="feature-icon"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v2"/><path d="M14.837 16.385a6 6 0 1 1-7.223-7.222c.624-.147.97.66.715 1.248a4 4 0 0 0 5.26 5.259c.589-.255 1.396.09 1.248.715"/><path d="M16 12a4 4 0 0 0-4-4"/><path d="m19 5-1.256 1.256"/><path d="M20 12h2"/></svg></span><h3>Light and dark</h3><p>A calm editor in both themes, following your system or your choice, with a toolbar that stays out of your screenshots.</p></li>
+      <p class="kicker">Use cases</p>
+      <h2 id="use-cases-title">One flow, ready for whoever needs it</h2>
+      <ul class="lanes">
+        <li class="lane">
+          <p class="lane-role"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.707 21.293a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414z"/><path d="m18 13-1.375-6.874a1 1 0 0 0-.746-.776L3.235 2.028a1 1 0 0 0-1.207 1.207L5.35 15.879a1 1 0 0 0 .776.746L13 18"/><path d="m2.3 2.3 7.286 7.286"/><circle cx="11" cy="11" r="2"/></svg> Designers</p>
+          <h3>Tear down any flow. Paste it into Figma.</h3>
+          <p>Walk a competitor’s onboarding or your own checkout, snap each screen, and drop the whole flow onto your canvas.</p>
+          <ul class="lane-points"><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Numbered, labeled frames in one paste</li><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Full-page captures for long screens</li><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> No plugin, no Figma account link</li></ul>
+          <p class="lane-output">Outputs to Figma · PNG</p>
+        </li>
+        <li class="lane">
+          <p class="lane-role"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></svg> Product managers</p>
+          <h3>Review journeys step by step.</h3>
+          <p>Turn a live journey into a sequence the team can discuss, with a title, a note and the source URL on every step.</p>
+          <ul class="lane-points"><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Reorder and rename by drag or keyboard</li><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Notes travel into every export</li><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> One PDF page per step for reviews</li></ul>
+          <p class="lane-output">Outputs to PDF · ZIP</p>
+        </li>
+        <li class="lane">
+          <p class="lane-role"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20v-9"/><path d="M14 7a4 4 0 0 1 4 4v3a6 6 0 0 1-12 0v-3a4 4 0 0 1 4-4z"/><path d="M14.12 3.88 16 2"/><path d="M21 21a4 4 0 0 0-3.81-4"/><path d="M21 5a4 4 0 0 1-3.55 3.97"/><path d="M22 13h-4"/><path d="M3 21a4 4 0 0 1 3.81-4"/><path d="M3 5a4 4 0 0 0 3.55 3.97"/><path d="M6 13H2"/><path d="m8 2 1.88 1.88"/><path d="M9 7.13V6a3 3 0 1 1 6 0v1.13"/></svg> QA and engineering</p>
+          <h3>Bug reports that reproduce the first time.</h3>
+          <p>Snap each step up to the defect, circle what broke, and hand over the exact sequence instead of one vague screenshot.</p>
+          <ul class="lane-points"><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Rectangles, arrows and text callouts</li><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Redact tokens, emails and customer data</li><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Source URL kept on every step</li></ul>
+          <p class="lane-output">Outputs to PNG · PDF</p>
+        </li>
+        <li class="lane">
+          <p class="lane-role"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg> Docs and support</p>
+          <h3>Step-by-step guides in minutes.</h3>
+          <p>Click through a task once and export a clean how-to that customers and teammates can follow.</p>
+          <ul class="lane-points"><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> A page per step with title and instructions</li><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Callouts drawn into every page</li><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Copy one step as a PNG for a ticket or article</li></ul>
+          <p class="lane-output">Outputs to PDF · PNG</p>
+        </li>
       </ul>
-      <ul class="formats" aria-label="Export formats"><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg> PNG</li><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="15" cy="19" r="2"/><path d="M20.9 19.8A2 2 0 0 0 22 18V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h5.1"/><path d="M15 11v-1"/><path d="M15 17v-2"/></svg> ZIP</li><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg> PDF</li><li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" x2="2" y1="6" y2="6"/><line x1="22" x2="2" y1="18" y2="18"/><line x1="6" x2="6" y1="2" y2="22"/><line x1="18" x2="18" y1="2" y2="22"/></svg> Figma</li></ul>
     </div>
   </section>
 
-  <section class="section" id="pdf" aria-labelledby="pdf-title">
+  <section class="section" id="exports" aria-labelledby="exports-title">
     <div class="wrap pdf-showcase">
       <div class="pdf-copy">
-        <p class="kicker">PDF export</p>
-        <h2 id="pdf-title">A flow document, ready to share</h2>
-        <p class="pdf-lede">Download PDF turns a flow into a clean, branded document: one page per step, ready for a review, a client deck or a bug report.</p>
+        <p class="kicker">Exports</p>
+        <h2 id="exports-title">Finished output, not a folder of files</h2>
+        <p class="pdf-lede">Every export keeps the order, the titles and your markup. Send it as it comes out.</p>
         <ul class="pdf-points">
-          <li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="7" x="3" y="3" rx="1"/><rect width="9" height="7" x="3" y="14" rx="1"/><rect width="5" height="7" x="16" y="14" rx="1"/></svg><span><strong>One page per step</strong>Flow name, step number, title and your notes, laid out on Snap's lavender gradient.</span></li>
-          <li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 21h8"/><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/></svg><span><strong>Annotations included</strong>Callouts, arrows and redactions are drawn into every page. Full-page captures scale to fit.</span></li>
-          <li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 17H7A5 5 0 0 1 7 7h2"/><path d="M15 7h2a5 5 0 1 1 0 10h-2"/><line x1="8" x2="16" y1="12" y2="12"/></svg><span><strong>Context that travels</strong>Each page keeps its source URL as a link, with the export date and time in the footer.</span></li>
-          <li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"/><path d="m14.5 12.5 2-2"/><path d="m11.5 9.5 2-2"/><path d="m8.5 6.5 2-2"/><path d="m17.5 15.5 2-2"/></svg><span><strong>Your size, your file</strong>Pages follow the flow's export width, and the file is named after the flow.</span></li>
+          <li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" x2="2" y1="6" y2="6"/><line x1="22" x2="2" y1="18" y2="18"/><line x1="6" x2="6" y1="2" y2="22"/><line x1="18" x2="18" y1="2" y2="22"/></svg><span><strong>Copy to Figma</strong>The whole flow lands on your canvas as numbered, labeled frames, left to right.</span></li>
+          <li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg><span><strong>Download PDF</strong>One page per step with the flow name, step title, your notes and a link to the source URL.</span></li>
+          <li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg><span><strong>PNG and ZIP</strong>Copy or download a single step, or a numbered ZIP of the whole flow with its notes.</span></li>
+          <li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49"/><path d="M14.084 14.158a3 3 0 0 1-4.242-4.242"/><path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143"/><path d="m2 2 20 20"/></svg><span><strong>Redactions included</strong>Pixelated in every export. Your original capture stays untouched in the editor.</span></li>
         </ul>
       </div>
-      <figure class="pdf-demo">
-        <video controls playsinline preload="none" poster="assets/pdf-export-demo.jpg" width="1866" height="1146" aria-label="Snap PDF export walkthrough">
-          <source src="assets/pdf-export-demo.mp4" type="video/mp4">
-          <a href="assets/pdf-export-demo.mp4">Watch the PDF export walkthrough</a>.
-        </video>
-        <figcaption>See how to export a flow as a PDF and preview the finished document.</figcaption>
-      </figure>
+      <!-- React Bits' Folder (site/src/pdf-folder.jsx) mounts here; the static stack is the no-script fallback. -->
+      <div class="pdf-folder-column">
+        <div class="pdf-folder" data-pdf-folder>
+          <div class="pdf-stack" aria-label="Three pages from an exported PDF">
+            <img class="pdf-page pdf-page--3" src="assets/pdf-page-3.jpg?v=c0ff79757e" alt="PDF page 3: the Bug report guide step of the Snap blog review flow, with its note and source URL." width="794" height="1123" loading="lazy">
+            <img class="pdf-page pdf-page--2" src="assets/pdf-page-2.jpg?v=6995b9b077" alt="PDF page 2: the Product flow guide step with its note and source URL." width="794" height="1123" loading="lazy">
+            <img class="pdf-page pdf-page--1" src="assets/pdf-page-1.jpg?v=bc1323bec8" alt="PDF page 1: the Snap blog review flow name above the Blog home step, annotated with a box, an arrow and a label, with its URL and the export date." width="794" height="1123" loading="lazy">
+          </div>
+        </div>
+        <p class="pdf-folder-hint">Click the folder to see the exported pages</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint" id="compare" aria-labelledby="compare-title">
+    <div class="wrap">
+      <p class="kicker">Why Snap</p>
+      <h2 id="compare-title">Between a screenshot shortcut and a screen recorder</h2>
+      <p class="section-lede">Shortcuts give you loose files. Auto-recorders capture every click and live in someone else’s cloud. Snap keeps you in control and still hands you a finished flow.</p>
+      <div class="compare-scroll" tabindex="0" role="region" aria-labelledby="compare-title">
+        <table class="compare">
+          <thead><tr><th scope="col"><span class="visually-hidden">Capability</span></th><th scope="col" class="compare-snap">Snap</th><th scope="col">Screenshot shortcut</th><th scope="col">Auto-recording guide tools</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">You choose every capture</th><td class="compare-snap"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span class="visually-hidden">Yes</span></td><td><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span class="visually-hidden">Yes</span></td><td>Captures each click</td></tr>
+            <tr><th scope="row">Kept in order with titles and URLs</th><td class="compare-snap"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span class="visually-hidden">Yes</span></td><td><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg><span class="visually-hidden">No</span></td><td><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span class="visually-hidden">Yes</span></td></tr>
+            <tr><th scope="row">Annotate and redact</th><td class="compare-snap"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span class="visually-hidden">Yes</span></td><td>Separate app</td><td>Varies by plan</td></tr>
+            <tr><th scope="row">Paste a whole flow into Figma</th><td class="compare-snap"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span class="visually-hidden">Yes</span></td><td>One file at a time</td><td>Rarely</td></tr>
+            <tr><th scope="row">No account needed</th><td class="compare-snap"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span class="visually-hidden">Yes</span></td><td><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span class="visually-hidden">Yes</span></td><td>Usually required</td></tr>
+            <tr><th scope="row">Stays on your device</th><td class="compare-snap"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span class="visually-hidden">Yes</span></td><td><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span class="visually-hidden">Yes</span></td><td>Usually cloud</td></tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </section>
 
@@ -127,14 +186,14 @@
         <div class="privacy-copy">
           <p class="kicker kicker--light">Local by design</p>
           <h2 id="privacy-title">Your screenshots never leave your device</h2>
-          <p>Snap has no account, no cloud sync, no analytics and no AI processing. Flows are stored in your Chrome profile and encrypted at rest. You decide what gets exported and shared.</p>
+          <p>No account, no cloud sync, no analytics and no AI processing. Flows live in your Chrome profile, encrypted. Nothing is shared until you export it.</p>
           <a class="privacy-link" href="privacy/">Read the privacy policy <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
         </div>
         <ul class="privacy-points">
           <li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.94 5.274A7 7 0 0 1 15.71 10h1.79a4.5 4.5 0 0 1 4.222 6.057"/><path d="M18.796 18.81A4.5 4.5 0 0 1 17.5 19H9A7 7 0 0 1 5.79 5.78"/><path d="m2 2 20 20"/></svg><span><strong>Nothing uploaded</strong>Network access is blocked inside the extension.</span></li>
-          <li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="16" r="1"/><rect x="3" y="10" width="18" height="12" rx="2"/><path d="M7 10V7a5 5 0 0 1 10 0v3"/></svg><span><strong>Encrypted at rest</strong>AES-GCM with a key kept in your browser profile.</span></li>
+          <li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="16" r="1"/><rect x="3" y="10" width="18" height="12" rx="2"/><path d="M7 10V7a5 5 0 0 1 10 0v3"/></svg><span><strong>Encrypted in your browser</strong>AES-GCM, with the key kept in your Chrome profile.</span></li>
           <li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4.1 12 6"/><path d="m5.1 8-2.9-.8"/><path d="m6 12-1.9 2"/><path d="M7.2 2.2 8 5.1"/><path d="M9.037 9.69a.498.498 0 0 1 .653-.653l11 4.5a.5.5 0 0 1-.074.949l-4.349 1.041a1 1 0 0 0-.74.739l-1.04 4.35a.5.5 0 0 1-.95.074z"/></svg><span><strong>Only when you ask</strong>No automatic captures, no keystroke or click logging.</span></li>
-          <li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg><span><strong>Narrow permissions</strong><code>activeTab</code>, <code>scripting</code> and <code>storage</code>. No all-sites access.</span></li>
+          <li><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg><span><strong>Narrow permissions</strong>Access to the tab you are on, only after you open Snap. No all-sites access.</span></li>
         </ul>
       </div>
     </div>
@@ -145,34 +204,36 @@
       <p class="kicker">FAQ</p>
       <h2 id="faq-title">Questions, answered</h2>
       <div class="faq">
-        <details><summary>Does Snap record video?</summary><p>No. Snap only saves the screenshots you take, one step at a time. There are no automatic captures when you click, scroll or navigate.</p></details>
+        <details><summary>Is Snap free?</summary><p>Yes. Install it from the Chrome Web Store and start snapping. There is no account and no sign-up.</p></details>
+        <details><summary>How is Snap different from a screen recorder?</summary><p>Snap never records video and never captures on its own. You decide which screens become steps, and each one is a sharp screenshot you can annotate, redact and export.</p></details>
+        <details><summary>How does Copy to Figma work?</summary><p>Copy to Figma puts the whole flow on your clipboard. Paste into any Figma file and each step appears as a numbered, labeled frame, laid out left to right. There is no plugin and no Figma account connection.</p></details>
+        <details><summary>Can I share flows with my team?</summary><p>Snap has no cloud workspace, by design. Share what you export: a PDF, a ZIP of numbered PNGs with your notes, a single PNG, or a paste into a shared Figma file.</p></details>
         <details><summary>Where are my flows stored?</summary><p>In your Chrome profile on this device, encrypted. Export anything important before removing the extension or clearing browser data.</p></details>
         <details><summary>Can I hide sensitive information?</summary><p>Yes. Draw a redaction over any area and it is pixelated in every PNG, ZIP, PDF and Figma export. Your original capture is kept unchanged in the editor.</p></details>
         <details><summary>Does it work on every website?</summary><p>On normal web pages, yes. Browser-internal pages and incognito tabs are excluded. When you move to a new site, Chrome may ask you to open Snap again to grant access.</p></details>
         <details><summary>How long can a flow be?</summary><p>Up to 120 steps or about 200 MB per flow. Full-page captures stitch up to 30 screens.</p></details>
+        <details><summary>Does Snap work on my phone?</summary><p>No. Snap is a Chrome extension for desktop. Open this page on your computer to install it.</p></details>
       </div>
     </div>
   </section>
 
-<section class="section section--tint" aria-labelledby="blogs-title"><div class="wrap"><p class="kicker">From the Snap blog</p><h2 id="blogs-title">Make every screenshot tell a story</h2><p class="blog-intro">Practical guides for product reviews, bug reports, and step-by-step documentation.</p><ul class="blog-grid"><li><article class="blog-card"><a href="blogs/document-product-flows/"><div class="blog-cover"><img src="assets/editor-light.png?v=00bad733b9" alt="Snap editor showing the steps of a checkout flow" width="600" height="340" loading="lazy"></div><div class="blog-card-copy"><p class="kicker">Product &amp; design</p><h3>How to document product flows with screenshots</h3><p>Capture a user journey in Chrome, annotate the important moments, and turn an ordered screenshot flow into a useful design review.</p><span class="read-more">Read article <span aria-hidden="true">↗</span></span></div></a></article></li><li><article class="blog-card"><a href="blogs/screenshot-bug-reports/"><div class="blog-cover"><img src="assets/annotate.png?v=85b7717ccc" alt="A screenshot in Snap with a rectangle, arrow, and text annotation" width="600" height="340" loading="lazy"></div><div class="blog-card-copy"><p class="kicker">QA &amp; engineering</p><h3>How to write a bug report with screenshot steps</h3><p>Make browser bugs easier to understand with ordered screenshots, clear reproduction steps, expected results, and focused annotations.</p><span class="read-more">Read article <span aria-hidden="true">↗</span></span></div></a></article></li><li><article class="blog-card"><a href="blogs/step-by-step-pdf-guides/"><div class="blog-cover"><img src="assets/pdf-page-1.jpg?v=2b9a5fb206" alt="An exported Snap PDF page containing a screenshot and step context" width="600" height="340" loading="lazy"></div><div class="blog-card-copy"><p class="kicker">Documentation &amp; support</p><h3>How to create step-by-step PDF guides from screenshots</h3><p>Turn a browser workflow into a clear PDF guide with ordered screenshots, concise instructions, annotations, and a final sharing review.</p><span class="read-more">Read article <span aria-hidden="true">↗</span></span></div></a></article></li></ul><div class="actions"><a class="button button--secondary" href="blogs/">Explore all blogs</a></div></div></section>
   <section class="section cta" id="get" aria-labelledby="get-title">
     <div class="wrap wrap--narrow cta-inner">
       <img src="assets/icon-128.png?v=1ec44d9e03" alt="" width="64" height="64" loading="lazy">
-      <h2 id="get-title">Get Snap for Chrome</h2>
-      <p>Install it from the Chrome Web Store and snap your first flow in a minute. No account needed.</p>
+      <h2 id="get-title">Stop sorting screenshots. Start snapping flows.</h2>
+      <p>Free in the Chrome Web Store. Your first flow takes about a minute.</p>
       <div class="actions">
-        <a class="button button--primary" href="https://chromewebstore.google.com/detail/Snap/alnaibbnciplmmjfdfcjokgebekljban"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z"/></svg> Add to Chrome</a>
-        <a class="button button--secondary" href="mailto:iaimforinfinity@gmail.com?subject=Snap%20feedback"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg> Send feedback</a>
+        <a class="button button--primary" href="https://chromewebstore.google.com/detail/Snap/alnaibbnciplmmjfdfcjokgebekljban">Add to Chrome, it’s free</a>
       </div>
     </div>
   </section>
 </main>
 
-<footer class="footer">
-  <div class="wrap footer-inner">
-    <span>Made with love by <a href="https://ammitsharma.in/">Infinity Labs</a></span>
-    <nav aria-label="Footer"><a href="blogs/">Blogs</a><a href="privacy/">Privacy</a><a href="support/">Support</a><a href="mailto:iaimforinfinity@gmail.com">Contact</a></nav>
-  </div>
-</footer>
+<footer class="footer"><div class="wrap footer-inner"><div class="footer-brand"><span>Snap, by <a href="https://ammitsharma.in/">Infinity Labs</a></span><span>Capture product flows, not random screenshots.</span></div><nav class="footer-cols" aria-label="Footer">
+<div><h2>Product</h2><a href="./">Home</a><a href="#how">How it works</a><a href="#use-cases">Use cases</a><a href="#compare">Why Snap</a><a href="#faq">FAQ</a></div>
+<div><h2>Features</h2><a href="annotate-screenshots/">Annotate screenshots</a><a href="full-page-screenshot/">Full page screenshots</a><a href="#exports">PDF, PNG and Figma export</a><a href="#privacy">Local-only privacy</a></div>
+<div><h2>From the blog</h2><a href="blogs/document-product-flows/">Document product flows</a><a href="blogs/screenshot-bug-reports/">Screenshot bug reports</a><a href="blogs/step-by-step-pdf-guides/">Step-by-step PDF guides</a><a href="blogs/">All articles</a></div>
+<div><h2>Help</h2><a href="support/">Support</a><a href="privacy/">Privacy policy</a><a href="mailto:iaimforinfinity@gmail.com?subject=Snap%20feedback">Send feedback</a><a href="https://chromewebstore.google.com/detail/Snap/alnaibbnciplmmjfdfcjokgebekljban">Chrome Web Store</a></div>
+</nav></div></footer>
 </body>
 </html>
