@@ -290,3 +290,19 @@ code{padding:.05em .35em;border-radius:6px;background:#ffffff1f;font:500 .9em ui
 .lane-link .icon{width:15px;height:15px}
 .notfound-title{font-size:clamp(32px,5vw,48px);line-height:1.1}
 @media (max-width:900px){.lanes--three{grid-template-columns:1fr}.footer .footer-cols{flex-wrap:wrap;gap:32px}}
+
+
+/* Long-form tool comparisons: readable tables with contained mobile scrolling. */
+.article-body h3{margin:30px 0 14px;font-size:22px;line-height:1.35;scroll-margin-top:100px}
+.article-body h2{scroll-margin-top:100px}
+.article-table-scroll{max-width:100%;overflow-x:auto;margin:28px 0;border:1px solid var(--edge);border-radius:14px;overscroll-behavior-x:contain}
+.article-table-scroll table{width:100%;min-width:560px;border-collapse:collapse;font-size:15px;line-height:1.55}
+.article-table-scroll th,.article-table-scroll td{padding:14px 16px;text-align:left;vertical-align:top;border-bottom:1px solid var(--edge)}
+.article-table-scroll th{background:var(--purple-soft);color:var(--ink);font-weight:500}
+.article-table-scroll tr:last-child td{border-bottom:0}
+.article-body pre{max-width:100%;overflow-x:auto;margin:24px 0;padding:20px;border-radius:14px;background:var(--surface);font-size:14px;line-height:1.7}
+.article-body code{overflow-wrap:anywhere}
+.article-body figcaption{margin-top:12px;color:var(--muted);font-size:14px;line-height:1.5}
+.article-aside{max-height:calc(100dvh - 128px);overflow-y:auto}
+.article-related{margin-top:40px;padding-top:20px;border-top:1px solid var(--edge)}
+@media(max-width:800px){.article-aside{max-height:none}.article-table-scroll table{font-size:14px}}
