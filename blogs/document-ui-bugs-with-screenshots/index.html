@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>How to Document UI Bugs With Screenshots | Snap</title><meta content="Write UI bug reports that are easier to reproduce. Learn which screens to capture, what context to include, and how to export the steps as a PDF." name="description"/>
+<link href="https://snapflow.in/blogs/document-ui-bugs-with-screenshots/" rel="canonical"/><meta content="light dark" name="color-scheme"/>
+<meta content="article" property="og:type"/><meta content="How to document a UI bug when a screenshot isn’t enough" property="og:title"/><meta content="Write UI bug reports that are easier to reproduce. Learn which screens to capture, what context to include, and how to export the steps as a PDF." property="og:description"/><meta content="https://snapflow.in/blogs/document-ui-bugs-with-screenshots/" property="og:url"/><meta content="https://snapflow.in/assets/og.png" property="og:image"/><meta content="summary_large_image" name="twitter:card"/>
+<link href="../../assets/favicon-32.png?v=44c19b6703" rel="icon"/><link href="../../styles.css?v=9dcfe2f840" rel="stylesheet"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "How to document a UI bug when a screenshot isn\u2019t enough", "description": "Write UI bug reports that are easier to reproduce. Learn which screens to capture, what context to include, and how to export the steps as a PDF.", "image": ["https://snapflow.in/assets/og.png"], "datePublished": "2026-10-20", "dateModified": "2026-10-20", "author": {"@type": "Organization", "name": "Infinity Labs", "url": "https://ammitsharma.in/"}, "publisher": {"@type": "Organization", "name": "Infinity Labs", "logo": {"@type": "ImageObject", "url": "https://snapflow.in/assets/icon-128.png"}}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://snapflow.in/blogs/document-ui-bugs-with-screenshots/"}, "url": "https://snapflow.in/blogs/document-ui-bugs-with-screenshots/"}</script></head><body>
+<a class="skip" href="#main">Skip to content</a><header class="nav"><div class="wrap nav-inner"><a aria-label="Snap home" class="brand" href="../../"><img alt="" height="23" src="../../assets/logo.png?v=5d984b726b" width="26"/><img alt="Snap" class="wordmark" height="19" src="../../assets/wordmark.svg?v=fe84d55ec9" width="46"/></a><nav aria-label="Primary"><a href="../../#how">How it works</a><a href="../../annotate-screenshots/">Annotate</a><a href="../../full-page-screenshot/">Full page</a><a href="../../#faq">FAQ</a><a aria-current="page" class="blog-nav-link" href="../../blogs/">Blog</a></nav><a class="button button--primary button--small" href="https://chromewebstore.google.com/detail/Snap/alnaibbnciplmmjfdfcjokgebekljban">Add to Chrome</a></div></header>
+<main id="main"><header class="blog-hero"><div class="wrap"><nav aria-label="Breadcrumb" class="breadcrumbs"><a href="../../">Snap</a><span aria-hidden="true">/</span><a href="../">Blog</a></nav><p class="kicker">QA &amp; engineering</p><h1>How to document a UI bug when a screenshot isn’t enough</h1><p class="blog-intro">Write UI bug reports that are easier to reproduce. Learn which screens to capture, what context to include, and how to export the steps as a PDF.</p><p class="blog-meta">By Infinity Labs · <time datetime="2026-10-20">October 20, 2026</time> · 5 min read</p></div></header><div class="wrap article-layout"><article aria-label="How to document a UI bug when a screenshot isn’t enough" class="article-body">
+<p>You find a bug, take a screenshot, and add it to the ticket.</p>
+<p>The first reply: “What did you click before this?”</p>
+<p>So you go back, repeat the steps, and take a few more screenshots. Now you’re explaining which image comes first and whether the form was already filled in.</p>
+<p>A useful UI bug report gives someone enough context to repeat the problem. Capture the starting state, describe the actions, show the result, and explain what you expected instead. Screenshots support that explanation; they don’t replace the steps.</p>
+<p>Here’s a practical way to put the report together.</p>
+<h2 id="start-with-the-condition-that-makes-the-bug-happen">Start with the condition that makes the bug happen</h2>
+<p>Before capturing anything, work out where your reproduction starts.</p>
+<p>“Open the app” might leave out the important part. Perhaps the user must be signed in as a workspace member, have an empty project, or arrive from a particular page.</p>
+<p>Record the conditions you actually tested:</p>
+<ul>
+<li>The page or route where you started.</li>
+<li>The user role and relevant account state.</li>
+<li>The browser version, operating system and viewport size.</li>
+<li>The app build or test environment, if available.</li>
+<li>Any setup needed, such as a previously saved draft.</li>
+</ul>
+<p>If the bug happened once and you haven’t reproduced it again, say so. “Observed once; not yet reproduced” is more useful than presenting a one-off result as something that always happens.</p>
+<h2 id="capture-the-states-that-explain-the-failure">Capture the states that explain the failure</h2>
+<p>You don’t need a screenshot of every click. Save the states that help someone understand the sequence.</p>
+<p>For a form-submission bug, that could be:</p>
+<div aria-label="Comparison table" class="article-table-scroll" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Capture</th>
+<th>What it establishes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Completed form</td>
+<td>The values entered before submission</td>
+</tr>
+<tr>
+<td>Submitting state, if observable</td>
+<td>The interface acknowledged the action</td>
+</tr>
+<tr>
+<td>Error state</td>
+<td>The exact message and what remained on screen</td>
+</tr>
+</tbody>
+</table></div>
+<p>The submitting state may disappear too quickly to capture manually. Don’t recreate it and present it as evidence. Use a short recording if that transition matters.</p>
+<p>Keep enough surrounding UI to identify the page. A tightly cropped error message may be legible, but it can hide which form or action produced it.</p>
+<figure class="article-image"><p><img alt="A fictional request form showing an error after submission, captured as the third step in Snap." height="810" loading="lazy" src="../../assets/ui-bug-error-example.webp" width="1440"/></p><figcaption><em>Illustrative example from Snap’s QA video. Orbit is a fictional app; this is not evidence of a bug in a live product.</em></figcaption></figure>
+
+<h2 id="write-the-actions-between-the-screenshots">Write the actions between the screenshots</h2>
+<p>Screenshots can show a completed form and an error. They may not show whether someone clicked the button, pressed Enter, or submitted twice.</p>
+<p>Write that part down explicitly. For the fictional example above:</p>
+<ol>
+<li>Open the new-request form as a workspace member.</li>
+<li>Enter “Review the onboarding flow” in the title field.</li>
+<li>Enter “Check the welcome screen and account setup” in the description.</li>
+<li>Click <strong>Create request</strong> once.</li>
+<li>Observe the error message.</li>
+</ol>
+<p>Use the labels people can see in the interface. “Click Create request” is easier to follow than “click the purple button.”</p>
+<h2 id="separate-the-expected-result-from-the-actual-result">Separate the expected result from the actual result</h2>
+<p>“This doesn’t work” makes the reader infer the intended behavior.</p>
+<p>A clearer version is:</p>
+<p><strong>Expected:</strong> The request is created and a confirmation appears.</p>
+<p><strong>Actual:</strong> The form displays “Something went wrong. Your request wasn’t created. Please try again.” The entered values remain visible.</p>
+<p>Keep observations separate from diagnosis. An error message doesn’t prove that the API failed or that no record was saved. If you checked the request list or collected a relevant response, include that separately. Otherwise, leave the underlying cause open.</p>
+<h2 id="keep-the-screenshots-and-notes-in-one-flow">Keep the screenshots and notes in one flow</h2>
+<p>In <a href="https://snapflow.in/">Snap</a>, start a flow before reproducing the issue. Capture the relevant screens as you move through the task, then give the steps useful names, such as “Completed form” and “Error after submission.”</p>
+<p>Add the expected and actual results to your notes. An annotation can point to the error or affected control without making the reader search the whole screen.</p>
+<p>When the sequence is ready, use <strong>Download PDF</strong>. Snap’s <a href="https://snapflow.in/#pdf">PDF export</a> puts each step on its own page with its title and notes. Open the exported file, check the order and legibility, and attach it to the bug ticket.</p>
+<p>Keep the written reproduction steps in the ticket itself, too. Someone should be able to understand the issue before opening an attachment.</p>
+<h2 id="copy-this-ui-bug-report-template">Copy this UI bug report template</h2>
+<pre><code class="language-text">Title: [Action] produces [unexpected result] on [screen]
+
+Environment:
+Browser and version:
+Operating system:
+Viewport:
+App build / test environment:
+User role and starting state:
+
+Steps to reproduce:
+1.
+2.
+3.
+
+Expected result:
+Actual result:
+
+Frequency: [observed X times in Y attempts / not retested]
+Evidence: [numbered screenshots, PDF, or short recording]
+Additional observations:
+</code></pre>
+<p>Before attaching evidence, check it for customer information, credentials and unrelated content. Inspect the exported file, not just the editor preview.</p>
+<h2 id="when-should-you-use-a-recording-instead">When should you use a recording instead?</h2>
+<p>Use a recording when the problem depends on motion or timing: flickering, a menu closing unexpectedly, a drag interaction, or a loading indicator that gets stuck. A screenshot sequence is useful when the important evidence is a set of distinct states.</p>
+<p>Neither format automatically captures browser logs, network responses or the cause of the failure. Add those separately when they’re relevant and safe to include.</p>
+<p>The final check is simple: could a teammate follow your report without asking you what happened between the images?</p>
+<p><a href="https://chromewebstore.google.com/detail/snap/alnaibbnciplmmjfdfcjokgebekljban">Try Snap for your next UI bug report</a>.</p><section class="article-related"><h2>Keep reading</h2><p><a href="../document-competitor-onboarding-flows/">How to capture competitor onboarding flows for a design review</a></p></section></article><aside class="article-aside"><h2>In this guide</h2><ol><li><a href="#start-with-the-condition-that-makes-the-bug-happen">Start with the condition that makes the bug happen</a></li><li><a href="#capture-the-states-that-explain-the-failure">Capture the states that explain the failure</a></li><li><a href="#write-the-actions-between-the-screenshots">Write the actions between the screenshots</a></li><li><a href="#separate-the-expected-result-from-the-actual-result">Separate the expected result from the actual result</a></li><li><a href="#keep-the-screenshots-and-notes-in-one-flow">Keep the screenshots and notes in one flow</a></li><li><a href="#copy-this-ui-bug-report-template">Copy this UI bug report template</a></li><li><a href="#when-should-you-use-a-recording-instead">When should you use a recording instead?</a></li></ol><a href="../">← All blogs</a></aside></div></main><footer class="footer"><div class="wrap footer-inner"><div class="footer-brand"><span>Snap, by <a href="https://ammitsharma.in/">Infinity Labs</a></span><span>Capture product flows, not random screenshots.</span></div><nav aria-label="Footer" class="footer-cols">
+<div><h2>Product</h2><a href="../../">Home</a><a href="../../#how">How it works</a><a href="../../#use-cases">Use cases</a><a href="../../#compare">Why Snap</a><a href="../../#faq">FAQ</a></div>
+<div><h2>Features</h2><a href="../../annotate-screenshots/">Annotate screenshots</a><a href="../../full-page-screenshot/">Full page screenshots</a><a href="../../#exports">PDF, PNG and Figma export</a><a href="../../#privacy">Local-only privacy</a></div>
+<div><h2>From the blog</h2><a href="../../blogs/document-product-flows/">Document product flows</a><a href="../../blogs/screenshot-bug-reports/">Screenshot bug reports</a><a href="../../blogs/step-by-step-pdf-guides/">Step-by-step PDF guides</a><a href="../../blogs/">All articles</a></div>
+<div><h2>Help</h2><a href="../../support/">Support</a><a href="../../privacy/">Privacy policy</a><a href="mailto:iaimforinfinity@gmail.com?subject=Snap%20feedback">Send feedback</a><a href="https://chromewebstore.google.com/detail/Snap/alnaibbnciplmmjfdfcjokgebekljban">Chrome Web Store</a></div>
+</nav></div></footer></body></html>
